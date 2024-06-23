@@ -1,0 +1,11 @@
+.keyboardGrid {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}

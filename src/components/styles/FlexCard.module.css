@@ -1,0 +1,33 @@
+.cardWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-around;
+  height: 40vh;
+  background-color: #fff;
+  padding: 6rem 4.8rem;
+  max-width: 18vw;
+  border-radius: 40px;
+  flex: 0 1 auto;
+}
+
+.number {
+  text-align: center;
+  font-size: 8.8rem;
+  color: #2463ff;
+}
+
+.title {
+  margin: 0;
+  font-size: 4.8rem;
+  color: #261676;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.description {
+  font-size: 2.6rem;
+  color: #887dc0;
+  text-align: center;
+  margin: 0 auto;
+}

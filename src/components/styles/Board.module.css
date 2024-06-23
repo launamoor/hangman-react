@@ -1,0 +1,112 @@
+.outerWrapper {
+  height: 100%;
+  width: 100%;
+  background: rgba(26, 4, 58, 0.75);
+  background: linear-gradient(
+    180deg,
+    rgba(26, 4, 58, 0.75) 0%,
+    rgba(21, 18, 120, 0.75) 70%,
+    rgba(43, 22, 119, 0.75) 100%
+  );
+  position: relative;
+}
+
+.innerWrapper {
+  padding: 8rem 11.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 4rem;
+}
+
+.topFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menuFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5.7rem;
+}
+
+.healthBarFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.menuButton {
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  height: 9.4rem;
+  width: 9.4rem;
+  border-radius: 50%;
+  background: rgb(254, 113, 254);
+  background: linear-gradient(
+    180deg,
+    rgba(254, 113, 254, 1) 0%,
+    rgba(113, 153, 255, 1) 100%
+  );
+  position: relative;
+  cursor: pointer;
+}
+
+.menuButton::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: inset 0px -6px 0px 7px rgba(157, 45, 245, 0.25);
+  transition: all 0.15s ease;
+}
+
+.menuButton:hover::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.categoryTitle {
+  margin: 0;
+  font-size: 8.8rem;
+  color: #fff;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
+}
+
+.healthBarOuter {
+  width: 24rem;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 0.9rem 1.1rem;
+}
+
+.healthBarInner {
+  height: 1.5rem;
+  background-color: #261676;
+  border-radius: 96px;
+  transition: all 0.3s ease;
+}

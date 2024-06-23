@@ -1,0 +1,51 @@
+.letterContainerShown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10.9rem;
+  height: 100%;
+  min-height: 8rem;
+  background-color: #fff;
+  color: #261676;
+  border-radius: 24px;
+  transition: all 0.15s ease;
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+}
+
+.letterContainerShown:hover {
+  background-color: #2463ff;
+}
+
+.letterContainerShown:hover .letter {
+  color: #fff;
+}
+
+.letterContainerShown:disabled:hover .letter {
+  color: inherit;
+}
+
+.letter {
+  font-size: 4.8rem;
+  color: #261676;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.letterContainerShown[disabled] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10.9rem;
+  height: 100%;
+  min-height: 8rem;
+  background-color: #fff;
+  color: #261676;
+  border-radius: 24px;
+  transition: all 0.15s ease;
+  font-family: inherit;
+  border: none;
+  opacity: 0.25;
+  cursor: auto;
+}
