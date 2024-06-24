@@ -70,3 +70,25 @@
   row-gap: 5rem;
   column-gap: 3.2rem;
 }
+
+/* QUERIES */
+
+@media screen and (max-width: 90em) {
+  .innerWrapper {
+    padding: 8rem 11.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12.5rem;
+  }
+}
+/* @media screen and (max-width: 64em) {
+
+}
+@media screen and (max-width: 53em) {
+
+
+@media screen and (max-width: 41em) {
+
+} */
