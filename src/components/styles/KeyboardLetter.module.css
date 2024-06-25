@@ -49,3 +49,58 @@
   opacity: 0.25;
   cursor: auto;
 }
+
+@media screen and (max-width: 90em) {
+  .letterContainerShown,
+  .letterContainerShown[disabled] {
+    width: 10.1rem;
+    height: 11.5rem;
+  }
+  .letter {
+    font-size: 7.9rem;
+  }
+  .letterContainerHidden {
+    width: 10.1rem;
+    height: 11.5rem;
+  }
+}
+
+@media screen and (max-width: 64em) {
+  .letter {
+    font-size: 4.8rem;
+  }
+  .letterContainerShown,
+  .letterContainerShown[disabled] {
+    width: 4.8rem;
+    height: 6.4rem;
+  }
+  .letterContainerHidden {
+    width: 4.8rem;
+    height: 6.4rem;
+  }
+}
+
+@media screen and (max-width: 53em) {
+  .letterContainerShown {
+  }
+  .letterContainerHidden {
+  }
+}
+
+@media screen and (max-width: 41em) {
+  .letterContainerShown,
+  .letterContainerShown[disabled] {
+    width: 3rem;
+    height: 5.6rem;
+    border-radius: 12px;
+  }
+  .letterContainerHidden {
+    width: 3rem;
+    height: 5.6rem;
+    border-radius: 12px;
+  }
+
+  .letter {
+    font-size: 2.4rem;
+  }
+}

@@ -160,7 +160,7 @@
 
 /* TABLETS ************ */
 
-@media screen and (max-width: 48em) {
+/* @media screen and (max-width: 48em) {
   .wrapper {
     flex-direction: column;
     padding: 1rem;
@@ -195,19 +195,19 @@
     width: 37.4rem;
     height: 18.5rem;
   }
-}
+} */
 
 /* 650px */
-@media screen and (max-width: 41em) {
+/* @media screen and (max-width: 41em) {
   .logo {
     transform: scale(0.88) translate(-50%, -50%);
     top: -5%;
     left: 40%;
   }
-}
+} */
 
 /* 520px */
-@media screen and (max-width: 32.5em) {
+/* @media screen and (max-width: 32.5em) {
   .startWrapper {
     height: 48rem;
     width: 32.5rem;
@@ -221,5 +221,167 @@
     height: 13rem;
     transform: scale(0.65) translate(-50%, -50%);
     left: 16%;
+  }
+} */
+
+@media screen and (max-width: 32.5em) {
+  /* Adjustments for small mobile screens */
+  .wrapper {
+    padding: 0.5rem;
+  }
+
+  .startWrapper {
+    height: 48rem;
+    width: 32.5rem;
+  }
+
+  .startWrapper::before,
+  .startWrapper::after {
+    box-shadow: inset 0px -6px 0px 4px #140e66;
+  }
+
+  .playButton {
+    height: 16rem;
+    width: 16rem;
+  }
+
+  .howToPlayButton {
+    width: 22rem;
+    font-size: 2.8rem;
+    padding: 1rem 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .logo {
+    width: 26rem;
+    height: 13rem;
+    transform: scale(0.65) translate(-50%, -50%);
+    left: 16%;
+    top: 2%;
+  }
+
+  .logoIcon {
+    width: 40%;
+    height: 40%;
+  }
+
+  .logo {
+    top: -2%;
+    height: 70%;
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 32.5em) and (max-width: 48em) {
+  /* Adjustments for large mobile screens */
+  .wrapper {
+    padding: 1rem;
+  }
+
+  .startWrapper {
+    height: 50rem;
+    width: 59.2rem;
+  }
+
+  .startWrapper::before,
+  .startWrapper::after {
+    box-shadow: inset 0px -8px 0px 4px #140e66;
+  }
+
+  .playButton {
+    height: 20rem;
+    width: 20rem;
+  }
+
+  .howToPlayButton {
+    width: 26rem;
+    height: 6.2rem;
+    font-size: 3.2rem;
+    margin-bottom: 4rem;
+  }
+
+  .logo {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 0;
+  }
+
+  .logoIcon {
+    width: 40%;
+    height: 40%;
+  }
+}
+
+@media screen and (min-width: 48em) and (max-width: 64em) {
+  /* Adjustments for tablets */
+  .wrapper {
+    padding: 1rem;
+  }
+
+  .startWrapper {
+    height: 50rem;
+    width: 59.2rem;
+  }
+
+  .startWrapper::before,
+  .startWrapper::after {
+    box-shadow: inset 0px -8px 0px 4px #140e66;
+  }
+
+  .playButton {
+    height: 20rem;
+    width: 20rem;
+  }
+
+  .howToPlayButton {
+    width: 26rem;
+    height: 6.2rem;
+    font-size: 3.2rem;
+    margin-bottom: 4rem;
+  }
+
+  .logo {
+    width: 37.4rem;
+    height: 18.5rem;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 0;
+  }
+}
+
+@media screen and (min-width: 64em) and (max-width: 90em) {
+  /* Adjustments for desktop screens */
+  .wrapper {
+    padding: 1rem;
+  }
+
+  .startWrapper {
+    height: 50rem;
+    width: 59.2rem;
+  }
+
+  .startWrapper::before,
+  .startWrapper::after {
+    box-shadow: inset 0px -8px 0px 4px #140e66;
+  }
+
+  .playButton {
+    height: 20rem;
+    width: 20rem;
+  }
+
+  .howToPlayButton {
+    width: 26rem;
+    height: 6.2rem;
+    font-size: 3.2rem;
+    margin-bottom: 4rem;
+  }
+
+  .logo {
+    width: 37.4rem;
+    height: 18.5rem;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 0;
   }
 }

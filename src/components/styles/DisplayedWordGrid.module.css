@@ -15,3 +15,23 @@
   gap: 10px;
   margin-bottom: 2rem;
 }
+
+@media screen and (max-width: 64em) {
+  .container {
+    margin-top: 1rem;
+  }
+
+  .wordFlex {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 41em) {
+  .container {
+    margin-top: 0.5rem;
+  }
+
+  .wordFlex {
+    margin-bottom: 0.5rem;
+  }
+}

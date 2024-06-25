@@ -146,3 +146,41 @@
   transform: translate(-50%, -50%);
   white-space: nowrap;
 }
+
+@media screen and (max-width: 64em) {
+  .menuBox {
+    height: 30rem;
+    width: 45rem;
+    gap: 2rem;
+  }
+
+  .menuBoxTitle {
+    font-size: 10rem;
+  }
+
+  .buttonContinue,
+  .buttonCategory,
+  .buttonQuit {
+    padding: 1rem 4rem;
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 53em) {
+  .menuBox {
+    height: 25rem;
+    width: 40rem;
+    gap: 1.5rem;
+  }
+
+  .menuBoxTitle {
+    font-size: 8rem;
+  }
+
+  .buttonContinue,
+  .buttonCategory,
+  .buttonQuit {
+    padding: 0.8rem 3.2rem;
+    font-size: 2.4rem;
+  }
+}

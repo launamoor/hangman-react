@@ -57,3 +57,60 @@
 .letterHidden {
   display: none;
 }
+
+@media screen and (max-width: 90em) {
+  .letterContainerShown {
+    width: 10.1rem;
+    height: 11.5rem;
+  }
+  .letter {
+    font-size: 7.9rem;
+  }
+  .letterContainerHidden {
+    width: 10.1rem;
+    height: 11.5rem;
+  }
+}
+
+@media screen and (max-width: 64em) {
+  .letterContainerShown {
+    width: 6rem;
+    height: 8rem;
+    border-radius: 24px;
+  }
+  .letter {
+    font-size: 6.4rem;
+    color: #fff;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  .letterContainerHidden {
+    width: 6rem;
+    height: 8rem;
+    border-radius: 24px;
+  }
+}
+
+@media screen and (max-width: 53em) {
+  .letterContainerShown {
+    width: 6.4rem;
+    height: 7.7rem;
+  }
+  .letterContainerHidden {
+    width: 6.4rem;
+    height: 7.7rem;
+  }
+}
+
+@media screen and (max-width: 41em) {
+  .letterContainerShown {
+    width: 4rem;
+    height: 6.6rem;
+    border-radius: 12px;
+  }
+  .letterContainerHidden {
+    width: 4rem;
+    height: 6.6rem;
+    border-radius: 12px;
+  }
+}

@@ -110,3 +110,93 @@
   border-radius: 96px;
   transition: all 0.3s ease;
 }
+
+/* @media screen and (max-width: 90em) {
+  .innerWrapper {
+    padding: 6rem 8rem;
+  }
+}
+
+@media screen and (max-width: 64em) {
+  .innerWrapper {
+    padding: 4rem 6rem;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 41em) {
+  .innerWrapper {
+    padding: 3rem 4rem;
+    gap: 1rem;
+  }
+} */
+
+@media screen and (max-width: 90em) {
+  .innerWrapper {
+    padding: 6rem 8rem;
+  }
+}
+
+@media screen and (max-width: 64em) {
+  .innerWrapper {
+    padding: 4rem 6rem;
+    gap: 6rem;
+  }
+
+  .categoryTitle {
+    font-size: 4.8rem;
+  }
+  .menuButton {
+    height: 6.4rem;
+    width: 6.4rem;
+  }
+
+  .menuButtonIcon {
+    width: 2.6rem;
+    height: 2.2rem;
+  }
+
+  .healthBarOuter {
+    width: 16rem;
+  }
+}
+
+@media screen and (max-width: 41em) {
+  .innerWrapper {
+    padding: 3rem 4rem;
+    gap: 5rem;
+  }
+
+  .menuFlex {
+    gap: 3rem; /* Adjust menu button gap for smaller screens */
+  }
+
+  .healthBarFlex {
+    gap: 2rem; /* Adjust health bar gap for smaller screens */
+  }
+
+  .topFlex {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .menuFlex {
+    gap: 0;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .healthBarFlex {
+    gap: 0;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .healthBarOuter {
+    order: 1;
+  }
+
+  .heartIcon {
+    margin-left: 0.5rem;
+  }
+}

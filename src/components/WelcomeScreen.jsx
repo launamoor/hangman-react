@@ -12,7 +12,7 @@ const WelcomeScreen = ({ onClick, onPlay }) => {
         </div>
         <div></div>
         <button onClick={onPlay} className={styles.playButton}>
-          <img src={play} alt="Play button" />
+          <img className={styles.logoIcon} src={play} alt="Play button" />
         </button>
         <button onClick={onClick} className={styles.howToPlayButton}>
           How to play

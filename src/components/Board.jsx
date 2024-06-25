@@ -31,7 +31,11 @@ const Board = ({
         <div className={styles.topFlex}>
           <div className={styles.menuFlex}>
             <button onClick={onPause} className={styles.menuButton}>
-              <img src={iconMenu} alt="Menu" />
+              <img
+                className={styles.menuButtonIcon}
+                src={iconMenu}
+                alt="Menu"
+              />
             </button>
             <h1 className={styles.categoryTitle}>{categoryTitle}</h1>
           </div>
