@@ -147,18 +147,112 @@
 
 @media screen and (max-width: 90em) {
   .cardWrapper {
-    padding: 5rem 3rem;
+    height: 40vh;
+    padding: 5.2rem 4rem;
+  }
+
+  .number {
+    font-size: 7.4rem;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .description {
+    font-size: 2.2rem;
   }
 }
 
 @media screen and (max-width: 64em) {
   .cardWrapper {
-    padding: 4rem 2rem;
+    width: auto;
+    flex-direction: row;
+    max-width: 100%;
+    grid-template-columns: 10rem 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    max-height: 12vh;
+    column-gap: 2rem;
+  }
+
+  .number {
+    font-size: 8.8rem;
+    grid-row: 1 / -1;
+    grid-column: 1;
+    align-self: center;
+  }
+
+  .title {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+    justify-self: start;
+    white-space: nowrap;
+    margin-bottom: 2rem;
+  }
+
+  .description {
+    margin-top: 3rem;
+    grid-column: 2;
+    grid-row: 1 / -1;
+    align-self: center;
+    text-align: start;
   }
 }
 
 @media screen and (max-width: 53em) {
   .cardWrapper {
-    padding: 3rem 1rem;
+    grid-template-columns: 4rem 1fr;
+    grid-template-rows: 7rem 1fr;
+    max-height: 15vh;
+    column-gap: 2rem;
+  }
+
+  .number {
+    font-size: 4.4rem;
+    grid-row: 1;
+    grid-column: 1;
+    align-self: start;
+    justify-self: start;
+  }
+
+  .title {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: start;
+    justify-self: start;
+    white-space: nowrap;
+    margin-bottom: 2rem;
+  }
+
+  .description {
+    margin-top: 3rem;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    align-self: start;
+    justify-self: start;
+    text-align: start;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 41em) {
+  html {
+    font-size: 50%;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+  .number {
+    font-size: 3.5rem;
+  }
+  .description {
+    font-size: 1.8rem;
+  }
+  .cardWrapper {
+    grid-template-rows: 5rem 1fr;
+    padding: 4.2rem 3rem;
+    max-height: 10vh;
+    row-gap: 0;
   }
 }
