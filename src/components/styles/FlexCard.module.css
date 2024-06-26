@@ -1,10 +1,11 @@
 .cardWrapper {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 15rem 10rem 1fr;
+  grid-template-rows: 12rem 8.5rem 1fr;
+  row-gap: 3rem;
   height: 45vh;
   background-color: #fff;
-  padding: 6rem 4.8rem;
+  padding: 4rem 3.8rem;
   max-width: 18vw;
   border-radius: 40px;
   flex: 0 1 auto;
@@ -14,7 +15,7 @@
   text-align: center;
   font-size: 8.8rem;
   color: #2463ff;
-  line-height: 1;
+  margin-top: 2rem;
 }
 
 .title {
@@ -23,7 +24,6 @@
   color: #261676;
   text-transform: uppercase;
   text-align: center;
-  white-space: nowrap;
 }
 
 .description {
@@ -31,228 +31,134 @@
   color: #887dc0;
   text-align: center;
   margin: 0 auto;
+  width: 90%;
 }
 
-/* @media screen and (max-width: 90em) {
+/* Laptops */
+@media screen and (min-width: 64em) and (max-width: 90em) {
   .cardWrapper {
-    height: 40vh;
-    padding: 5.2rem 4rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10rem 7.5rem 1fr;
+    padding: 2rem 3rem;
   }
 
   .number {
-    font-size: 7.4rem;
+    font-size: 8rem;
   }
 
   .title {
-    font-size: 4rem;
+    font-size: 4.3rem;
   }
 
   .description {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
   }
 }
 
-@media screen and (max-width: 64em) {
+/* Tablets */
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .cardWrapper {
-    width: auto;
-    flex-direction: row;
-    max-width: 100%;
     grid-template-columns: 10rem 1fr;
     grid-template-rows: repeat(2, 1fr);
-    max-height: 12vh;
-    column-gap: 2rem;
-  }
-
-  .number {
-    font-size: 8.8rem;
-    grid-row: 1 / -1;
-    grid-column: 1;
-    align-self: center;
-  }
-
-  .title {
-    grid-column: 2;
-    grid-row: 1;
-    align-self: center;
-    justify-self: start;
-    white-space: nowrap;
-    margin-bottom: 2rem;
-  }
-
-  .description {
-    margin-top: 3rem;
-    grid-column: 2;
-    grid-row: 1 / -1;
-    align-self: center;
-    text-align: start;
-  }
-}
-
-@media screen and (max-width: 53em) {
-  .cardWrapper {
-    grid-template-columns: 4rem 1fr;
-    grid-template-rows: 7rem 1fr;
-    max-height: 15vh;
-    column-gap: 2rem;
-  }
-
-  .number {
-    font-size: 4.4rem;
-    grid-row: 1;
-    grid-column: 1;
-    align-self: start;
-    justify-self: start;
-  }
-
-  .title {
-    grid-column: 2;
-    grid-row: 1;
-    align-self: start;
-    justify-self: start;
-    white-space: nowrap;
-    margin-bottom: 2rem;
-  }
-
-  .description {
-    margin-top: 3rem;
-    grid-column: 1 / -1;
-    grid-row: 2;
-    align-self: start;
-    justify-self: start;
-    text-align: start;
-    margin-top: 0;
-  }
-}
-
-@media screen and (max-width: 41em) {
-  html {
-    font-size: 50%;
-  }
-  .title {
-    font-size: 2.5rem;
-  }
-  .number {
-    font-size: 3.5rem;
-  }
-  .description {
-    font-size: 1.8rem;
-  }
-  .cardWrapper {
-    grid-template-rows: 5rem 1fr;
-    padding: 4.2rem 3rem;
     max-height: 10vh;
+    min-width: 80vw;
+    max-width: auto;
+    gap: 1rem;
     row-gap: 0;
   }
-} */
-
-@media screen and (max-width: 90em) {
-  .cardWrapper {
-    height: 40vh;
-    padding: 5.2rem 4rem;
-  }
 
   .number {
-    font-size: 7.4rem;
-  }
-
-  .title {
-    font-size: 4rem;
-  }
-
-  .description {
-    font-size: 2.2rem;
-  }
-}
-
-@media screen and (max-width: 64em) {
-  .cardWrapper {
-    width: auto;
-    flex-direction: row;
-    max-width: 100%;
-    grid-template-columns: 10rem 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    max-height: 12vh;
-    column-gap: 2rem;
-  }
-
-  .number {
-    font-size: 8.8rem;
-    grid-row: 1 / -1;
     grid-column: 1;
-    align-self: center;
+    grid-row: 1 / -1;
+    font-size: 7rem;
   }
 
   .title {
     grid-column: 2;
     grid-row: 1;
-    align-self: center;
-    justify-self: start;
-    white-space: nowrap;
-    margin-bottom: 2rem;
+    font-size: 3.8rem;
+    text-align: start;
   }
 
   .description {
-    margin-top: 3rem;
     grid-column: 2;
-    grid-row: 1 / -1;
-    align-self: center;
+    grid-row: 2;
+    justify-self: start;
+    width: 100%;
+    font-size: 2rem;
     text-align: start;
   }
 }
 
-@media screen and (max-width: 53em) {
+@media screen and (min-width: 32.5em) and (max-width: 48em) {
   .cardWrapper {
-    grid-template-columns: 4rem 1fr;
-    grid-template-rows: 7rem 1fr;
-    max-height: 15vh;
-    column-gap: 2rem;
+    grid-template-columns: 5rem 1fr;
+    grid-template-rows: 5rem 1fr;
+    max-height: 13vh;
+    min-width: 80vw;
+    max-width: auto;
+    gap: 1rem;
+    row-gap: 0;
   }
 
   .number {
-    font-size: 4.4rem;
-    grid-row: 1;
     grid-column: 1;
-    align-self: start;
+    grid-row: 1;
+    font-size: 3.8rem;
+    margin-top: 0;
     justify-self: start;
   }
 
   .title {
     grid-column: 2;
     grid-row: 1;
-    align-self: start;
-    justify-self: start;
-    white-space: nowrap;
-    margin-bottom: 2rem;
+    font-size: 3.8rem;
+    text-align: start;
   }
 
   .description {
-    margin-top: 3rem;
     grid-column: 1 / -1;
     grid-row: 2;
-    align-self: start;
     justify-self: start;
+    width: 100%;
+    font-size: 2rem;
     text-align: start;
-    margin-top: 0;
   }
 }
 
-@media screen and (max-width: 41em) {
-  html {
-    font-size: 50%;
-  }
-  .title {
-    font-size: 2.5rem;
-  }
-  .number {
-    font-size: 3.5rem;
-  }
-  .description {
-    font-size: 1.8rem;
-  }
+@media screen and (max-width: 32.5em) {
   .cardWrapper {
+    grid-template-columns: 5rem 1fr;
     grid-template-rows: 5rem 1fr;
-    padding: 4.2rem 3rem;
-    max-height: 10vh;
+    max-height: 14vh;
+    min-width: 80vw;
+    max-width: auto;
+    gap: 1rem;
     row-gap: 0;
+    padding: 3rem 2rem;
+  }
+
+  .number {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 3rem;
+    margin-top: 0;
+    justify-self: start;
+  }
+
+  .title {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 3rem;
+    text-align: start;
+  }
+
+  .description {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    justify-self: start;
+    width: 100%;
+    font-size: 1.8rem;
+    text-align: start;
   }
 }

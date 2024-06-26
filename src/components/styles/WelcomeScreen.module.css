@@ -158,74 +158,7 @@
   z-index: 10;
 }
 
-/* TABLETS ************ */
-
-/* @media screen and (max-width: 48em) {
-  .wrapper {
-    flex-direction: column;
-    padding: 1rem;
-  }
-
-  .startWrapper {
-    height: 50rem;
-    width: 59.2rem;
-  }
-
-  .startWrapper::before {
-    height: 100%;
-    width: 100%;
-  }
-
-  .startWrapper::after {
-    height: 100%;
-    width: 100%;
-  }
-
-  .playButton {
-    height: 20rem;
-    width: 20rem;
-  }
-
-  .howToPlayButton {
-    width: 26rem;
-    height: 6.2rem;
-  }
-
-  .logo {
-    width: 37.4rem;
-    height: 18.5rem;
-  }
-} */
-
-/* 650px */
-/* @media screen and (max-width: 41em) {
-  .logo {
-    transform: scale(0.88) translate(-50%, -50%);
-    top: -5%;
-    left: 40%;
-  }
-} */
-
-/* 520px */
-/* @media screen and (max-width: 32.5em) {
-  .startWrapper {
-    height: 48rem;
-    width: 32.5rem;
-  }
-  .playButton {
-    height: 16rem;
-    width: 16rem;
-  }
-  .logo {
-    width: 26rem;
-    height: 13rem;
-    transform: scale(0.65) translate(-50%, -50%);
-    left: 16%;
-  }
-} */
-
 @media screen and (max-width: 32.5em) {
-  /* Adjustments for small mobile screens */
   .wrapper {
     padding: 0.5rem;
   }
@@ -256,24 +189,17 @@
     width: 26rem;
     height: 13rem;
     transform: scale(0.65) translate(-50%, -50%);
-    left: 16%;
-    top: 2%;
+    left: 25%;
+    top: -6%;
   }
 
   .logoIcon {
     width: 40%;
     height: 40%;
   }
-
-  .logo {
-    top: -2%;
-    height: 70%;
-    width: 70%;
-  }
 }
 
 @media screen and (min-width: 32.5em) and (max-width: 48em) {
-  /* Adjustments for large mobile screens */
   .wrapper {
     padding: 1rem;
   }
@@ -313,7 +239,6 @@
 }
 
 @media screen and (min-width: 48em) and (max-width: 64em) {
-  /* Adjustments for tablets */
   .wrapper {
     padding: 1rem;
   }
@@ -350,7 +275,6 @@
 }
 
 @media screen and (min-width: 64em) and (max-width: 90em) {
-  /* Adjustments for desktop screens */
   .wrapper {
     padding: 1rem;
   }

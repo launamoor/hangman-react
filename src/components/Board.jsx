@@ -46,8 +46,12 @@ const Board = ({
                 className={styles.healthBarInner}
               ></div>
             </div>
-            <div className={styles.heartIcon}>
-              <img src={iconHeart} alt="Icon Heart" />
+            <div>
+              <img
+                className={styles.heartIcon}
+                src={iconHeart}
+                alt="Icon Heart"
+              />
             </div>
           </div>
         </div>

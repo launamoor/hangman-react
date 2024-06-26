@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 10.9rem;
+  min-width: 10.9rem;
   height: 100%;
   min-height: 8rem;
   background-color: #fff;
@@ -50,54 +50,59 @@
   cursor: auto;
 }
 
-@media screen and (max-width: 90em) {
+/* Laptops */
+@media screen and (min-width: 64em) and (max-width: 90em) {
   .letterContainerShown,
   .letterContainerShown[disabled] {
-    width: 10.1rem;
-    height: 11.5rem;
-  }
-  .letter {
-    font-size: 7.9rem;
-  }
-  .letterContainerHidden {
-    width: 10.1rem;
-    height: 11.5rem;
+    min-width: 9rem;
+    height: 100%;
+    min-height: 8rem;
   }
 }
 
-@media screen and (max-width: 64em) {
-  .letter {
-    font-size: 4.8rem;
-  }
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .letterContainerShown,
   .letterContainerShown[disabled] {
-    width: 4.8rem;
-    height: 6.4rem;
-  }
-  .letterContainerHidden {
-    width: 4.8rem;
-    height: 6.4rem;
+    min-width: 6.4rem;
+    min-height: 8.4rem;
+    max-width: 6.4rem;
+    max-height: 8.4rem;
   }
 }
 
-@media screen and (max-width: 53em) {
+@media screen and (min-width: 32.5em) and (max-width: 48em) {
   .letterContainerShown {
+    min-width: 2.9rem;
+    min-height: 5.6rem;
+    border-radius: 8px;
   }
-  .letterContainerHidden {
+
+  .letterContainerShown[disabled] {
+    min-width: 2.9rem;
+    min-height: 5.6rem;
+    border-radius: 8px;
+    max-width: 2.9rem;
+    max-height: 5.6rem;
+  }
+
+  .letter {
+    font-size: 2.4rem;
   }
 }
 
-@media screen and (max-width: 41em) {
-  .letterContainerShown,
-  .letterContainerShown[disabled] {
-    width: 3rem;
-    height: 5.6rem;
-    border-radius: 12px;
+@media screen and (max-width: 32.5em) {
+  .letterContainerShown {
+    min-width: 2.9rem;
+    min-height: 5.6rem;
+    border-radius: 8px;
   }
-  .letterContainerHidden {
-    width: 3rem;
-    height: 5.6rem;
-    border-radius: 12px;
+
+  .letterContainerShown[disabled] {
+    min-width: 2.9rem;
+    min-height: 5.6rem;
+    border-radius: 8px;
+    max-width: 2.9rem;
+    max-height: 5.6rem;
   }
 
   .letter {

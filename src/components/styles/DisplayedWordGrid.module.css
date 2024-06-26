@@ -2,6 +2,7 @@
   width: 100%;
   margin: 0 auto;
   display: flex;
+  column-gap: 12.2rem;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -16,22 +17,8 @@
   margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 64em) {
+@media screen and (min-width: 64em) and (max-width: 90em) {
   .container {
-    margin-top: 1rem;
-  }
-
-  .wordFlex {
-    margin-bottom: 1rem;
-  }
-}
-
-@media screen and (max-width: 41em) {
-  .container {
-    margin-top: 0.5rem;
-  }
-
-  .wordFlex {
-    margin-bottom: 0.5rem;
+    column-gap: 11.1rem;
   }
 }

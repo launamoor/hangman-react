@@ -147,40 +147,51 @@
   white-space: nowrap;
 }
 
-@media screen and (max-width: 64em) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .menuBox {
-    height: 30rem;
-    width: 45rem;
-    gap: 2rem;
+    height: 40rem;
+    width: 55rem;
   }
-
+  .buttonContinue,
+  .buttonCategory,
+  .buttonQuit {
+    padding: 1.2rem 6.4rem;
+    font-size: 3.2rem;
+    border-radius: 40px;
+  }
+  .menuBoxTitle {
+    font-size: 11.5rem;
+  }
+}
+@media screen and (min-width: 32.5em) and (max-width: 48em) {
+  .menuBox {
+    height: 50%;
+    width: 80%;
+  }
+  .buttonContinue,
+  .buttonCategory,
+  .buttonQuit {
+    padding: 1.2rem 6.4rem;
+    font-size: 3.2rem;
+    border-radius: 40px;
+  }
   .menuBoxTitle {
     font-size: 10rem;
   }
-
-  .buttonContinue,
-  .buttonCategory,
-  .buttonQuit {
-    padding: 1rem 4rem;
-    font-size: 2.8rem;
-  }
 }
-
-@media screen and (max-width: 53em) {
+@media screen and (max-width: 32.5em) {
   .menuBox {
-    height: 25rem;
-    width: 40rem;
-    gap: 1.5rem;
+    height: 50%;
+    width: 80%;
   }
-
-  .menuBoxTitle {
-    font-size: 8rem;
-  }
-
   .buttonContinue,
   .buttonCategory,
   .buttonQuit {
-    padding: 0.8rem 3.2rem;
-    font-size: 2.4rem;
+    padding: 1.2rem 6.4rem;
+    font-size: 3.2rem;
+    border-radius: 40px;
+  }
+  .menuBoxTitle {
+    font-size: 8.8rem;
   }
 }

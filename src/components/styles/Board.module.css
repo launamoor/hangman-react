@@ -111,92 +111,130 @@
   transition: all 0.3s ease;
 }
 
-/* @media screen and (max-width: 90em) {
-  .innerWrapper {
-    padding: 6rem 8rem;
-  }
-}
-
-@media screen and (max-width: 64em) {
-  .innerWrapper {
-    padding: 4rem 6rem;
-    gap: 2rem;
-  }
-}
-
-@media screen and (max-width: 41em) {
-  .innerWrapper {
-    padding: 3rem 4rem;
-    gap: 1rem;
-  }
-} */
-
-@media screen and (max-width: 90em) {
-  .innerWrapper {
-    padding: 6rem 8rem;
-  }
-}
-
-@media screen and (max-width: 64em) {
-  .innerWrapper {
-    padding: 4rem 6rem;
-    gap: 6rem;
-  }
-
+@media screen and (min-width: 64em) and (max-width: 90em) {
   .categoryTitle {
-    font-size: 4.8rem;
+    font-size: 6.4rem;
   }
   .menuButton {
-    height: 6.4rem;
-    width: 6.4rem;
+    height: 8rem;
+    width: 8rem;
   }
-
   .menuButtonIcon {
-    width: 2.6rem;
-    height: 2.2rem;
+    height: 50%;
+    width: 50%;
   }
+}
 
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .healthBarOuter {
     width: 16rem;
   }
+  .categoryTitle {
+    font-size: 6.4rem;
+  }
+  .menuButton {
+    height: 8rem;
+    width: 8rem;
+  }
+  .menuButtonIcon {
+    height: 50%;
+    width: 50%;
+  }
+
+  .menuFlex {
+    gap: 3rem;
+  }
+
+  .healthBarFlex {
+    gap: 3rem;
+  }
+
+  .innerWrapper {
+    padding: 8rem;
+  }
 }
 
-@media screen and (max-width: 41em) {
-  .innerWrapper {
-    padding: 3rem 4rem;
-    gap: 5rem;
-  }
-
-  .menuFlex {
-    gap: 3rem; /* Adjust menu button gap for smaller screens */
-  }
-
-  .healthBarFlex {
-    gap: 2rem; /* Adjust health bar gap for smaller screens */
-  }
-
-  .topFlex {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .menuFlex {
-    gap: 0;
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  .healthBarFlex {
-    gap: 0;
-    justify-content: space-between;
-    width: 100%;
-  }
-
+@media screen and (min-width: 32.5em) and (max-width: 48em) {
   .healthBarOuter {
-    order: 1;
+    width: 6rem;
+  }
+  .categoryTitle {
+    font-size: 4rem;
+  }
+  .menuButton {
+    height: 4rem;
+    width: 4rem;
+  }
+  .menuButtonIcon {
+    height: 50%;
+    width: 50%;
+  }
+
+  .menuFlex {
+    gap: 1rem;
+  }
+
+  .healthBarFlex {
+    gap: 1rem;
   }
 
   .heartIcon {
-    margin-left: 0.5rem;
+    width: 2.4rem;
+    height: 2.6rem;
+  }
+
+  .healthBarOuter {
+    height: 1rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  .healthBarInner {
+    height: 0.8rem;
+  }
+  .innerWrapper {
+    padding: 8rem;
+  }
+}
+
+@media screen and (max-width: 32.5em) {
+  .healthBarOuter {
+    width: 6rem;
+  }
+  .categoryTitle {
+    font-size: 4rem;
+  }
+  .menuButton {
+    height: 4rem;
+    width: 4rem;
+  }
+  .menuButtonIcon {
+    height: 50%;
+    width: 50%;
+  }
+
+  .menuFlex {
+    gap: 1rem;
+  }
+
+  .healthBarFlex {
+    gap: 1rem;
+  }
+
+  .heartIcon {
+    width: 2.4rem;
+    height: 2.6rem;
+  }
+
+  .healthBarOuter {
+    height: 1rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  .healthBarInner {
+    height: 0.8rem;
+  }
+
+  .innerWrapper {
+    padding: 2rem;
   }
 }

@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 11.2rem;
-  height: 12.8rem;
+  min-width: 11.2rem;
+  min-height: 12.8rem;
   background-color: #2463ff;
   color: #fff;
   border-radius: 40px;
@@ -45,8 +45,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 11.2rem;
-  height: 12.8rem;
+  min-width: 11.2rem;
+  min-height: 12.8rem;
   background-color: #2463ff;
   color: #fff;
   border-radius: 40px;
@@ -58,59 +58,62 @@
   display: none;
 }
 
-@media screen and (max-width: 90em) {
-  .letterContainerShown {
-    width: 10.1rem;
-    height: 11.5rem;
-  }
-  .letter {
-    font-size: 7.9rem;
-  }
+@media screen and (min-width: 64em) and (max-width: 90em) {
+  .letterContainerShown,
   .letterContainerHidden {
-    width: 10.1rem;
-    height: 11.5rem;
+    min-width: 10.1rem;
+    min-height: 11.5rem;
   }
 }
 
-@media screen and (max-width: 64em) {
-  .letterContainerShown {
-    width: 6rem;
-    height: 8rem;
-    border-radius: 24px;
+@media screen and (min-width: 48em) and (max-width: 64em) {
+  .letterContainerShown,
+  .letterContainerHidden {
+    min-width: 8.6rem;
+    min-height: 11.2rem;
+    border-radius: 32px;
   }
+
+  .letterContainerShown::before,
+  .letterContainerShown::after {
+    border-radius: 32px;
+  }
+
   .letter {
     font-size: 6.4rem;
-    color: #fff;
-    font-weight: normal;
-    text-transform: uppercase;
-  }
-  .letterContainerHidden {
-    width: 6rem;
-    height: 8rem;
-    border-radius: 24px;
   }
 }
 
-@media screen and (max-width: 53em) {
-  .letterContainerShown {
-    width: 6.4rem;
-    height: 7.7rem;
-  }
+@media screen and (min-width: 32.5em) and (max-width: 48em) {
+  .letterContainerShown,
   .letterContainerHidden {
-    width: 6.4rem;
-    height: 7.7rem;
+    min-width: 4rem;
+    min-height: 6.6rem;
+    border-radius: 12px;
+  }
+  .letterContainerShown::before,
+  .letterContainerShown::after {
+    border-radius: 12px;
+  }
+
+  .letter {
+    font-size: 4rem;
   }
 }
 
-@media screen and (max-width: 41em) {
-  .letterContainerShown {
-    width: 4rem;
-    height: 6.6rem;
+@media screen and (max-width: 32.5em) {
+  .letterContainerShown,
+  .letterContainerHidden {
+    min-width: 4rem;
+    min-height: 6.6rem;
     border-radius: 12px;
   }
-  .letterContainerHidden {
-    width: 4rem;
-    height: 6.6rem;
+  .letterContainerShown::before,
+  .letterContainerShown::after {
     border-radius: 12px;
+  }
+
+  .letter {
+    font-size: 4rem;
   }
 }
