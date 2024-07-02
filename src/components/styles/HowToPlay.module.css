@@ -140,6 +140,9 @@
 }
 
 @media screen and (max-width: 32.5em) {
+  html {
+    font-size: 50%;
+  }
   .innerWrapper {
     padding: 2rem 3.2rem;
     justify-content: flex-start;
